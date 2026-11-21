@@ -1,0 +1,5 @@
+.taste-skill/chrome*/
+node_modules/
+*.log
+.taste-skill/consistency/
+.taste-skill/found.json

@@ -1,0 +1,74 @@
+gate: checking index.html (service); this takes a few minutes on a CPU Chrome
+gate: rounds used up; 23 FAIL open
+  FAIL shader-lint      runtime/ui.js "template"  [1440]
+       a shader uses "template" as a name (line 6: grid-template-columns:minmax(300px,var(--ns-mainw,1fr)) 8px minmax(220px,var(--ns-railw,34): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays
+       fix: rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)
+  FAIL shader-lint      runtime/ui.js "inline"  [1440]
+       a shader uses "inline" as a name (line 29: .ns-status.busy .ns-spin{display:inline-block}): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty
+       fix: rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)
+  FAIL shader-lint      runtime/ui.js "active"  [1440]
+       a shader uses "active" as a name (line 39: .ns-anode.active{border-color:var(--ns-primary,#2563eb);box-shadow:0 0 0 3px color-mix(in ): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays 
+       fix: rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)
+  FAIL shader-lint      runtime/ui.js "fixed"  [1440]
+       a shader uses "fixed" as a name (line 43: .ns-modal{position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays e
+       fix: rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)
+  FAIL shader-lint      runtime/ui.js "input"  [1440]
+       a shader uses "input" as a name (line 64: .ns-linker-form input{flex:1 1 280px;min-width:0;padding:7px 9px;border:1px solid var(--ns): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays e
+       fix: rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)
+  FAIL shader-lint      runtime/ui.js "default"  [1440]
+       a shader uses "default" as a name (line 84: .ns-w-btn:disabled,.ns-w-choice:disabled{opacity:.55;cursor:default}): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty
+       fix: rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)
+  FAIL overlap-text     section#assistant > div.wrap > p.assistant-note "No provider key? Use the request builder"  [1440, 390]
+       lies over the text "Free tiers have usage limits and may var" (div.ns-key-help > div.ns-hint)
+       fix: move the box off the text (or the text off the box)
+  FAIL overlap-text     section#request "Put it in writing Your request, ready to"  [1440]
+       lies over the text "Save and start" (button#ns-apply)
+       fix: move the box off the text (or the text off the box)
+  FAIL text-only        section#assistant "Ask. Clarify. Make a plan."  [1440, 390]
+       the section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)
+       fix: give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground
+  FAIL text-only        section#request "Your request, ready to review."  [1440, 390]
+       the closing section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)
+       fix: give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground
+  FAIL button-styles    (one screen)  [1440, 390]
+       4 button styles on one screen: soft, outline #181715 ("Otari ↗ Billing may be required"); soft, fill #181715 ("Draft a request ↗"); soft, fill #181715, outline #181715 ("Save and start"); soft, outline #bbbcb4 ("New chat
+       fix: one primary and one secondary button: one shape, one height per size, one label size
+  FAIL button-styles    (the page)  [1440, 390]
+       5 button styles on the page: soft, fill #181715 x4 ("Draft a request ↗"); soft, outline #181715 x8 ("Ask the assistant"); soft, fill #181715, outline #181715 x2 ("Save and start"); soft, outline #bbbcb4 x1 ("New chat"); 
+       fix: one primary and one secondary button: one shape, one height per size, one label size
+  FAIL copy-fact        h1#hero-h "Plumbing help for Edmonton homes."  [1440]
+       the first screen holds no number, price, date, place, platform or genre
+       fix: put one hard fact from the brief on the first screen: a number, a price, a date, the place, the platforms it runs on or a game's genre; take it from the brief or remove the claim
+  FAIL copy-headings    h2#services-h "From a dripping tap to a new water heate"  [1440]
+       "From a dripping tap to a new water heater." names no product, part, place or section (5 headings like it; at most one brand line per page) (and 4 more like it: "Drain cleaning", "Water heaters", "Leak repair", "Renovati
+       fix: name the thing in every heading: the product, a part, the place or a section noun
+  FAIL focus-visible    button#ns-devtoggle "⚙ Developer"  [1440]
+       Tab stop 10, button "⚙ Developer": the focus lands on something you cannot see
+       fix: keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus
+  FAIL section-height   section#assistant "A website you can talk toAsk. Clarify. M"  [1440]
+       the section's content does not fit it: its lowest content ends 830px below its top, past 828px (the section less 72px of bottom padding) (SR-2)
+       fix: fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups
+  FAIL one-section      div#agent-app > div.ns-app "Northgate Plumbing API key required 127."  [1440]
+       a band: a box 89% of the section wide on a ground of its own that holds only text: the section's own ground is the band (SR-4)
+       fix: put every block of <main> in a <section>, and give a band its own section instead of a ground inside one
+  FAIL one-heading      h2#assistant-h "Ask. Clarify. Make a plan."  [1440]
+       headings of two sections show whole on one screen at 3 of 91 scroll positions (3.3%; at scroll 2000, 2050, 2100px), here with "not": at most 3% on a desktop (SR-5)
+       fix: make the sections one screen tall so their headings sit a screen apart and two never share one
+  FAIL container-edges  div#ns-msgs > div.ns-msg.bot "Service answers and a local quote-reques"  [1440]
+       1 text block starts on a left line at x 105, 25px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL container-edges  div#ns-in-use "In use: no key yet"  [1440]
+       6 text blocks start on a left line at x 93, 13px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also "Saved setup Custom / unsaved", "Don't have an API key?", "An 
+       fix: start the text on the container's left, or on the one split line every split shares
+  FAIL overlap-text     input#ns-input  [390]
+       lies over the text "Choose a provider below and create a key" (div.ns-key-help > p:nth-of-type(2))
+       fix: move the box off the text (or the text off the box)
+  FAIL cut-text         div#ns-msgs > div.ns-msg.bot "Service answers and a local quote-reques"  [390]
+       9 of 20 lines hidden by the overflow of div#ns-msgs
+       fix: give the text room: no overflow clipping a line, no line past its box
+  FAIL neighbour        #request section.section.request-section "Put it in writingYour request, r"  [390]
+       framed, 410px of the footer shows
+       fix: keep the next section's heading and picture out of this screen
+  22 WARN (not blocking), first: nav header.nav > div.wrap.nav__bar > a.nav__; scroll-reveal section#areas > div.wrap > p.mo-wh__text; copy-buttons header.nav > div.wrap.nav__bar > div.nav; copy-actions (the page); heading-scale h2#services-h "From a dripping tap to a 
+Stop fixing: put these open FAILs and the waivers in your report, then finish.
+GATE: OPEN 23 (rounds used up)
