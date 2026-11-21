@@ -1,0 +1,54 @@
+
+perf index.html @ 1440px
+  PASS  host CPU load (before/after)               1/2 %          
+  PASS  total transfer                             368.1 KiB      html 3.8K  css 50.6K  js 163.4K  font 59.4K  img 84.2K  other 6.7K
+  PASS  requests                                   53             52 by load
+  PASS  images bytes                               84.2 KiB       2 files
+  PASS  largest image                              59.7 KiB       img/bathroom-desktop.jpg
+  WARN  JS parsed                                  461.6 KiB      37 files, 163.4K gz
+  PASS  CSS                                        50.6 KiB       6 files
+  PASS  font families                              2              Red Hat Display, Red Hat Text
+  PASS  font files                                 2              59.4K
+  PASS  font bytes                                 59.4 KiB       
+  PASS  images without width+height                0              
+  PASS  below-fold images not lazy                 0              1 marked lazy in the page source, set eager by system.js once the page has loaded
+  PASS  oversized images (natural > 2.2x shown)    0              
+  PASS  WebGL live at load                         0              
+  PASS  WebGL live at bottom                       0              
+  PASS  WebGL peak live                            0              0 contexts made in all
+  PASS  long tasks                                 0              runs 1, , max 0ms
+  PASS  blocking time                              0 ms           runs 1,  ms; at load 0ms
+  PASS  FCP (CPU, relative)                        108 ms         
+  PASS  LCP (CPU, relative)                        108 ms         img
+  PASS  layout shift                               0.013          at load 0.013
+  PASS  modules loaded, never mounted              0              
+  PASS  broken requests                            0              
+  PASS  page height                                6 screens      DOM 348 nodes
+
+perf index.html @ 390px
+  PASS  host CPU load (before/after)               1/2 %          
+  PASS  total transfer                             325.2 KiB      html 3.8K  css 50.2K  js 163.4K  font 59.4K  img 42.1K  other 6.3K
+  PASS  requests                                   52             51 by load
+  PASS  images bytes                               42.1 KiB       2 files
+  PASS  largest image                              24.5 KiB       img/sink-640.jpg
+  WARN  JS parsed                                  461.6 KiB      37 files, 163.4K gz
+  PASS  CSS                                        50.2 KiB       6 files
+  PASS  font families                              2              Red Hat Display, Red Hat Text
+  PASS  font files                                 2              59.4K
+  PASS  font bytes                                 59.4 KiB       
+  PASS  images without width+height                0              
+  PASS  below-fold images not lazy                 0              1 marked lazy in the page source, set eager by system.js once the page has loaded
+  PASS  oversized images (natural > 2.2x shown)    0              
+  PASS  WebGL live at load                         0              
+  PASS  WebGL live at bottom                       0              
+  PASS  WebGL peak live                            0              0 contexts made in all
+  PASS  long tasks                                 0              runs 1, , max 0ms
+  PASS  blocking time                              0 ms           runs 1,  ms; at load 0ms
+  PASS  FCP (CPU, relative)                        64 ms          
+  PASS  LCP (CPU, relative)                        64 ms          img
+  PASS  layout shift                               0.000          at load 0.000
+  PASS  modules loaded, never mounted              0              
+  PASS  broken requests                            0              
+  PASS  page height                                7.5 screens    DOM 348 nodes
+
+SUMMARY index.html: 0 FAIL, 2 WARN  -> WARN

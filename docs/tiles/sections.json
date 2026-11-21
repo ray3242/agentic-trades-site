@@ -1,0 +1,238 @@
+{
+ "url": "http://127.0.0.1:5300/index.html",
+ "views": {
+  "desktop": {
+   "width": 1440,
+   "height": 900,
+   "navH": 72,
+   "scrollHeight": 5525,
+   "screens": 6.14,
+   "sections": [
+    {
+     "n": 1,
+     "tag": "section",
+     "id": "",
+     "cls": "hero hero--film",
+     "top": 0,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-01-a.jpg",
+       "scrollY": 0
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "tag": "section",
+     "id": "services",
+     "cls": "section",
+     "top": 900,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-02-a.jpg",
+       "scrollY": 900
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "tag": "section",
+     "id": "areas",
+     "cls": "section area-section mo-wh",
+     "top": 1800,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-03-a.jpg",
+       "scrollY": 1800
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "tag": "section",
+     "id": "assistant",
+     "cls": "section assistant-section",
+     "top": 2700,
+     "h": 1025,
+     "hScreens": 1.14,
+     "offGrid": 125,
+     "tiles": [
+      {
+       "file": "desktop-sec-04-a.jpg",
+       "scrollY": 2700
+      },
+      {
+       "file": "desktop-sec-04-b.jpg",
+       "scrollY": 2825
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "tag": "section",
+     "id": "request",
+     "cls": "section request-section",
+     "top": 3725,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-05-a.jpg",
+       "scrollY": 3725
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "tag": "footer",
+     "id": "privacy",
+     "cls": "footer closing",
+     "top": 4625,
+     "h": 900,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "desktop-sec-06-a.jpg",
+       "scrollY": 4625
+      }
+     ]
+    }
+   ],
+   "consoleErrors": []
+  },
+  "mobile": {
+   "width": 390,
+   "height": 844,
+   "navH": 56,
+   "scrollHeight": 6404,
+   "screens": 7.59,
+   "sections": [
+    {
+     "n": 1,
+     "tag": "section",
+     "id": "",
+     "cls": "hero hero--film",
+     "top": 0,
+     "h": 844,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "mobile-sec-01-a.jpg",
+       "scrollY": 0
+      }
+     ]
+    },
+    {
+     "n": 2,
+     "tag": "section",
+     "id": "services",
+     "cls": "section",
+     "top": 844,
+     "h": 1187,
+     "hScreens": 1.41,
+     "offGrid": 343,
+     "tiles": [
+      {
+       "file": "mobile-sec-02-a.jpg",
+       "scrollY": 844
+      },
+      {
+       "file": "mobile-sec-02-b.jpg",
+       "scrollY": 1187
+      }
+     ]
+    },
+    {
+     "n": 3,
+     "tag": "section",
+     "id": "areas",
+     "cls": "section area-section mo-wh",
+     "top": 2031,
+     "h": 844,
+     "hScreens": 1,
+     "offGrid": 0,
+     "tiles": [
+      {
+       "file": "mobile-sec-03-a.jpg",
+       "scrollY": 2031
+      }
+     ]
+    },
+    {
+     "n": 4,
+     "tag": "section",
+     "id": "assistant",
+     "cls": "section assistant-section",
+     "top": 2875,
+     "h": 1204,
+     "hScreens": 1.43,
+     "offGrid": 360,
+     "tiles": [
+      {
+       "file": "mobile-sec-04-a.jpg",
+       "scrollY": 2875
+      },
+      {
+       "file": "mobile-sec-04-b.jpg",
+       "scrollY": 3235
+      }
+     ]
+    },
+    {
+     "n": 5,
+     "tag": "section",
+     "id": "request",
+     "cls": "section request-section",
+     "top": 4079,
+     "h": 1284,
+     "hScreens": 1.52,
+     "offGrid": 440,
+     "tiles": [
+      {
+       "file": "mobile-sec-05-a.jpg",
+       "scrollY": 4079
+      },
+      {
+       "file": "mobile-sec-05-b.jpg",
+       "scrollY": 4519
+      }
+     ]
+    },
+    {
+     "n": 6,
+     "tag": "footer",
+     "id": "privacy",
+     "cls": "footer closing",
+     "top": 5363,
+     "h": 1040,
+     "hScreens": 1.23,
+     "offGrid": 196,
+     "tiles": [
+      {
+       "file": "mobile-sec-06-a.jpg",
+       "scrollY": 5363
+      },
+      {
+       "file": "mobile-sec-06-b.jpg",
+       "scrollY": 5559
+      }
+     ]
+    }
+   ],
+   "consoleErrors": []
+  }
+ },
+ "at": "2026-11-21T19:09:41.606Z"
+}

@@ -1,0 +1,1043 @@
+{
+ "start": "2026-11-21T19:11:01.608Z",
+ "round": 3,
+ "idle": 0,
+ "errors": 0,
+ "status": "open",
+ "history": [
+  {
+   "at": "2026-11-21T19:12:45.885Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 35,
+   "round": 1,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-21T19:15:15.593Z",
+   "mode": "manual",
+   "status": "fail",
+   "fails": 24,
+   "round": 2,
+   "reused": false,
+   "stopHookActive": false
+  },
+  {
+   "at": "2026-11-21T19:18:18.424Z",
+   "mode": "manual",
+   "status": "open",
+   "fails": 23,
+   "round": 3,
+   "reused": false,
+   "stopHookActive": false
+  }
+ ],
+ "max": 3,
+ "marker": {
+  "page": "index.html",
+  "url": null,
+  "root": null,
+  "kind": "service",
+  "category": "Edmonton plumbing",
+  "primary": "Draft a request",
+  "rounds": 3,
+  "start": "2026-11-21T19:11:01.608Z",
+  "by": "gate.mjs --start"
+ },
+ "manual": true,
+ "roundKey": "88471c4bd1ed928f:da39a3ee",
+ "roundFree": false,
+ "idleFree": false,
+ "blockKey": null,
+ "fp": "88471c4bd1ed928f",
+ "page": "index.html",
+ "found": {
+  "fails": [
+   {
+    "check": "shader-lint",
+    "where": "runtime/ui.js \"template\"",
+    "msg": "a shader uses \"template\" as a name (line 6: grid-template-columns:minmax(300px,var(--ns-mainw,1fr)) 8px minmax(220px,var(--ns-railw,34): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+    "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "shader-lint"
+    ],
+    "wheres": [
+     "runtime/ui.js \"template\""
+    ]
+   },
+   {
+    "check": "shader-lint",
+    "where": "runtime/ui.js \"inline\"",
+    "msg": "a shader uses \"inline\" as a name (line 29: .ns-status.busy .ns-spin{display:inline-block}): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+    "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "shader-lint"
+    ],
+    "wheres": [
+     "runtime/ui.js \"inline\""
+    ]
+   },
+   {
+    "check": "shader-lint",
+    "where": "runtime/ui.js \"active\"",
+    "msg": "a shader uses \"active\" as a name (line 39: .ns-anode.active{border-color:var(--ns-primary,#2563eb);box-shadow:0 0 0 3px color-mix(in ): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+    "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "shader-lint"
+    ],
+    "wheres": [
+     "runtime/ui.js \"active\""
+    ]
+   },
+   {
+    "check": "shader-lint",
+    "where": "runtime/ui.js \"fixed\"",
+    "msg": "a shader uses \"fixed\" as a name (line 43: .ns-modal{position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+    "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "shader-lint"
+    ],
+    "wheres": [
+     "runtime/ui.js \"fixed\""
+    ]
+   },
+   {
+    "check": "shader-lint",
+    "where": "runtime/ui.js \"input\"",
+    "msg": "a shader uses \"input\" as a name (line 64: .ns-linker-form input{flex:1 1 280px;min-width:0;padding:7px 9px;border:1px solid var(--ns): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+    "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "shader-lint"
+    ],
+    "wheres": [
+     "runtime/ui.js \"input\""
+    ]
+   },
+   {
+    "check": "shader-lint",
+    "where": "runtime/ui.js \"default\"",
+    "msg": "a shader uses \"default\" as a name (line 84: .ns-w-btn:disabled,.ns-w-choice:disabled{opacity:.55;cursor:default}): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+    "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "shader-lint"
+    ],
+    "wheres": [
+     "runtime/ui.js \"default\""
+    ]
+   },
+   {
+    "check": "overlap-text",
+    "where": "section#assistant > div.wrap > p.assistant-note \"No provider key? Use the request builder\"",
+    "msg": "lies over the text \"Free tiers have usage limits and may var\" (div.ns-key-help > div.ns-hint)",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "overlap-text"
+    ],
+    "wheres": [
+     "section#assistant > div.wrap > p.assistant-note \"No provider key? Use the request builder\""
+    ]
+   },
+   {
+    "check": "overlap-text",
+    "where": "section#request \"Put it in writing Your request, ready to\"",
+    "msg": "lies over the text \"Save and start\" (button#ns-apply)",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "overlap-text"
+    ],
+    "wheres": [
+     "section#request \"Put it in writing Your request, ready to\""
+    ]
+   },
+   {
+    "check": "text-only",
+    "where": "section#assistant \"Ask. Clarify. Make a plan.\"",
+    "msg": "the section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+    "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-only"
+    ],
+    "wheres": [
+     "section#assistant \"Ask. Clarify. Make a plan.\""
+    ]
+   },
+   {
+    "check": "text-only",
+    "where": "section#request \"Your request, ready to review.\"",
+    "msg": "the closing section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+    "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "text-only"
+    ],
+    "wheres": [
+     "section#request \"Your request, ready to review.\""
+    ]
+   },
+   {
+    "check": "button-styles",
+    "where": "(one screen)",
+    "msg": "4 button styles on one screen: soft, outline #181715 (\"Otari ↗ Billing may be required\"); soft, fill #181715 (\"Draft a request ↗\"); soft, fill #181715, outline #181715 (\"Save and start\"); soft, outline #bbbcb4 (\"New chat\"); the odd ones out: \"Save and start\", \"New chat\"",
+    "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "button-styles"
+    ],
+    "wheres": [
+     "(one screen)"
+    ]
+   },
+   {
+    "check": "button-styles",
+    "where": "(the page)",
+    "msg": "5 button styles on the page: soft, fill #181715 x4 (\"Draft a request ↗\"); soft, outline #181715 x8 (\"Ask the assistant\"); soft, fill #181715, outline #181715 x2 (\"Save and start\"); soft, outline #bbbcb4 x1 (\"New chat\"); soft, fill #e8e8e3 x1 (\"Download my draft\")",
+    "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "button-styles"
+    ],
+    "wheres": [
+     "(the page)"
+    ]
+   },
+   {
+    "check": "copy-fact",
+    "where": "h1#hero-h \"Plumbing help for Edmonton homes.\"",
+    "msg": "the first screen holds no number, price, date, place, platform or genre",
+    "fix": "put one hard fact from the brief on the first screen: a number, a price, a date, the place, the platforms it runs on or a game's genre; take it from the brief or remove the claim",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "copy-fact"
+    ],
+    "wheres": [
+     "h1#hero-h \"Plumbing help for Edmonton homes.\""
+    ]
+   },
+   {
+    "check": "copy-headings",
+    "where": "h2#services-h \"From a dripping tap to a new water heate\"",
+    "msg": "\"From a dripping tap to a new water heater.\" names no product, part, place or section (5 headings like it; at most one brand line per page) (and 4 more like it: \"Drain cleaning\", \"Water heaters\", \"Leak repair\", \"Renovations & sump pumps\")",
+    "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "copy-headings"
+    ],
+    "wheres": [
+     "h2#services-h \"From a dripping tap to a new water heate\""
+    ]
+   },
+   {
+    "check": "focus-visible",
+    "where": "button#ns-devtoggle \"⚙ Developer\"",
+    "msg": "Tab stop 10, button \"⚙ Developer\": the focus lands on something you cannot see",
+    "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "focus-visible"
+    ],
+    "wheres": [
+     "button#ns-devtoggle \"⚙ Developer\""
+    ]
+   },
+   {
+    "check": "section-height",
+    "where": "section#assistant \"A website you can talk toAsk. Clarify. M\"",
+    "msg": "the section's content does not fit it: its lowest content ends 830px below its top, past 828px (the section less 72px of bottom padding) (SR-2)",
+    "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "section-height"
+    ],
+    "wheres": [
+     "section#assistant \"A website you can talk toAsk. Clarify. M\""
+    ]
+   },
+   {
+    "check": "one-section",
+    "where": "div#agent-app > div.ns-app \"Northgate Plumbing API key required 127.\"",
+    "msg": "a band: a box 89% of the section wide on a ground of its own that holds only text: the section's own ground is the band (SR-4)",
+    "fix": "put every block of <main> in a <section>, and give a band its own section instead of a ground inside one",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-section"
+    ],
+    "wheres": [
+     "div#agent-app > div.ns-app \"Northgate Plumbing API key required 127.\""
+    ]
+   },
+   {
+    "check": "one-heading",
+    "where": "h2#assistant-h \"Ask. Clarify. Make a plan.\"",
+    "msg": "headings of two sections show whole on one screen at 3 of 91 scroll positions (3.3%; at scroll 2000, 2050, 2100px), here with \"not\": at most 3% on a desktop (SR-5)",
+    "fix": "make the sections one screen tall so their headings sit a screen apart and two never share one",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "one-heading"
+    ],
+    "wheres": [
+     "h2#assistant-h \"Ask. Clarify. Make a plan.\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "div#ns-msgs > div.ns-msg.bot \"Service answers and a local quote-reques\"",
+    "msg": "1 text block starts on a left line at x 105, 25px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "div#ns-msgs > div.ns-msg.bot \"Service answers and a local quote-reques\""
+    ]
+   },
+   {
+    "check": "container-edges",
+    "where": "div#ns-in-use \"In use: no key yet\"",
+    "msg": "6 text blocks start on a left line at x 93, 13px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also \"Saved setup Custom / unsaved\", \"Don't have an API key?\", \"An API key is a private code fro\") (SR-6)",
+    "fix": "start the text on the container's left, or on the one split line every split shares",
+    "widths": [
+     1440
+    ],
+    "from": "consistency",
+    "ids": [
+     "container-edges"
+    ],
+    "wheres": [
+     "div#ns-in-use \"In use: no key yet\""
+    ]
+   },
+   {
+    "check": "overlap-text",
+    "where": "input#ns-input",
+    "msg": "lies over the text \"Choose a provider below and create a key\" (div.ns-key-help > p:nth-of-type(2))",
+    "fix": "move the box off the text (or the text off the box)",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "overlap-text"
+    ],
+    "wheres": [
+     "input#ns-input"
+    ]
+   },
+   {
+    "check": "cut-text",
+    "where": "div#ns-msgs > div.ns-msg.bot \"Service answers and a local quote-reques\"",
+    "msg": "9 of 20 lines hidden by the overflow of div#ns-msgs",
+    "fix": "give the text room: no overflow clipping a line, no line past its box",
+    "widths": [
+     390
+    ],
+    "from": "consistency",
+    "ids": [
+     "cut-text"
+    ],
+    "wheres": [
+     "div#ns-msgs > div.ns-msg.bot \"Service answers and a local quote-reques\""
+    ]
+   },
+   {
+    "check": "neighbour",
+    "where": "#request section.section.request-section \"Put it in writingYour request, r\"",
+    "msg": "framed, 410px of the footer shows",
+    "fix": "keep the next section's heading and picture out of this screen",
+    "widths": [
+     390
+    ],
+    "from": "layout",
+    "ids": [
+     "neighbour"
+    ],
+    "wheres": [
+     "#request section.section.request-section \"Put it in writingYour request, r\""
+    ]
+   }
+  ],
+  "warns": [
+   {
+    "check": "nav",
+    "where": "header.nav > div.wrap.nav__bar > a.nav__logo \"N Northgate Plumbing\"",
+    "msg": "the nav is lopsided: its first item starts 9px inside the content's edge (80px), while its last ends on the other edge",
+    "fix": "start the nav's first item and end its last on the content's two edges",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "scroll-reveal",
+    "where": "section#areas > div.wrap > p.mo-wh__text \"Tell us where the job is. Start with you\"",
+    "msg": "starts \"color\" (0.2 s) the moment it is scrolled into view (an IntersectionObserver) on span.mo-w:nth-of-type(1) (inside a dealt moment's section, [data-moment]: an enter moment is expected on every kind; its still is judged under reduced motion)",
+    "fix": "show it at rest: no fade, rise or unmask when it is scrolled into view",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-buttons",
+    "where": "header.nav > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"Draft a request ↗\"",
+    "msg": "\"Draft a request ↗\" does not start with a verb (book, buy, try, start, get, see...) (and 8 more like it: \"⚙ Developer\", \"Otari ↗ Billing may be r\", \"Google AI Studio ↗ Free \", \"Groq ↗ Free tier\", ...)",
+    "fix": "label buttons with a verb and what the visitor gets (\"Book a room\", \"Start free trial\")",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-actions",
+    "where": "(the page)",
+    "msg": "14 different button labels on the page (at most 10)",
+    "fix": "few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "heading-scale",
+    "where": "h2#services-h \"From a dripping tap to a new water heate\"",
+    "msg": "h2 headings in 2 sizes, 40px (\"Ask. Clarify. Make a pla\") to 48px (x1.20)",
+    "fix": "size headings by level: the h1 largest, one size per level, each level below the one above",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "off-grid",
+    "where": "ul.rows.service-rows > li:nth-of-type(1) > div > h3 \"Drain cleaning\"",
+    "msg": "left edge at 120.5px, 3.5px off a common edge of its section at 124px (6 elements, like h3); 1 more in this section off the grid too (p at 120.5px)",
+    "fix": "move it onto the page margin, or the column edge its section uses",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#request / footer#privacy",
+    "msg": "241px between these sections, +26% against the median 192px of gaps at a change of ground",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "section-gaps",
+    "where": "section#assistant / section#request",
+    "msg": "uneven space at the edge of a band: 70px outside its edge, 122px inside it (the space on either side of a change of ground reads as one gap only when the two match)",
+    "fix": "use one gap between sections (all within 25% of each other)",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "links",
+    "where": "header.nav > div.wrap.nav__bar > nav.nav__links > a.nav__link:nth-of-type(4) \"Privacy\"",
+    "msg": "\"Privacy\" goes to #privacy, in the footer",
+    "fix": "point every link at a real section, page or file",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "photo-credit",
+    "where": "(the page text)",
+    "msg": "1 library source (wikimedia): the page credits wikimedia; confirm each shows the client's own product, place or people",
+    "fix": "confirm the library photograph shows the client's own product, place or people; otherwise replace it",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.nav > div.wrap.nav__bar > nav.nav__links > a.nav__link:nth-of-type(1) \"Services\"",
+    "msg": "\"Services\" opens a section headed \"From a dripping tap to a new water heater.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.nav > div.wrap.nav__bar > nav.nav__links > a.nav__link:nth-of-type(2) \"Areas\"",
+    "msg": "\"Areas\" opens a section headed \"Edmonton, and a little beyond.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.nav > div.wrap.nav__bar > nav.nav__links > a.nav__link:nth-of-type(3) \"Assistant\"",
+    "msg": "\"Assistant\" opens a section headed \"Ask. Clarify. Make a plan.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-labels",
+    "where": "header.nav > div.wrap.nav__bar > nav.nav__links > a.nav__link:nth-of-type(4) \"Privacy\"",
+    "msg": "\"Privacy\" opens a section headed \"Your browser. Your model. Your choice.\"",
+    "fix": "name each nav link after the heading of the section it opens",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "nav-current",
+    "where": "header.nav",
+    "msg": "the nav stays on screen with 4 links to the page's sections, but never marks the one you are in (no link changes as the page scrolls)",
+    "fix": "mark the link of the section on screen (a colour, a weight or a line under it) as the visitor scrolls",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "grounds",
+    "where": "section#areas \"Edmonton, and a little beyond. Tell us w\"",
+    "msg": "4 flat grounds across the page (#e8e8e3 section x4, #bfb21a section, #f7f7f1 band, #dcdcd6 section): three at most (the base, a surface, an inverse)",
+    "fix": "three flat grounds at most (the base, one surface, one inverse): lay the other bands on one of them",
+    "widths": [
+     1440,
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "action-repeat",
+    "where": "header.nav > div.wrap.nav__bar > div.nav__actions > a.btn.btn--primary \"draft a request\"",
+    "msg": "\"draft a request\" shows 2 times on the first screen at 1440px (nav, hero): the nav's button and the hero's; nothing else on the screen may repeat it",
+    "fix": "show the action once a screen besides the nav's button: the hero's, the close's or the phone bar's, never all at once",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "form-fields",
+    "where": "form#request-form",
+    "msg": "the form has no status line (role=\"status\"): sending, sent and errors are never read out",
+    "fix": "give each field its type, autocomplete and inputmode, never block paste or disable the button before a submit, and add the status line (references/system.md, Forms)",
+    "widths": [
+     1440
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "tap-size",
+    "where": "main.ns-main > div.ns-chat > details.ns-action-status > summary \"2 website actions connected\"",
+    "msg": "a 300x19px tap target: under the 44px a phone needs",
+    "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+    "widths": [
+     390,
+     320
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "button-styles",
+    "where": "button#ns-devtoggle \"⚙ Developer\"",
+    "msg": "on the phone 3 buttons run the full width of their column, but 2 keep their own width, like \"⚙ Developer\" is 102px of 326px: one action in two sizes",
+    "fix": "give every button the same width rule on the phone: all full width, or all at their own width",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "stranded-action",
+    "where": "button#ns-devtoggle \"⚙ Developer\"",
+    "msg": "stands 309px down from the nearest text of its block (\"Saved setup Custom / unsaved\")",
+    "fix": "put the button under or beside the text it belongs to",
+    "widths": [
+     390
+    ],
+    "from": "consistency"
+   },
+   {
+    "check": "copy-eyebrows",
+    "msg": "5 eyebrow or kicker labels",
+    "fix": "one or two a page; a heading that names the thing needs no label over it (references/copy-tells.md)",
+    "widths": [],
+    "from": "copy",
+    "where": "(the copy)",
+    "exact": false
+   }
+  ],
+  "crashed": [],
+  "seconds": {
+   "consistency": 95,
+   "layout": 3
+  }
+ },
+ "open": [
+  {
+   "check": "shader-lint",
+   "where": "runtime/ui.js \"template\"",
+   "msg": "a shader uses \"template\" as a name (line 6: grid-template-columns:minmax(300px,var(--ns-mainw,1fr)) 8px minmax(220px,var(--ns-railw,34): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+   "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "shader-lint"
+   ],
+   "wheres": [
+    "runtime/ui.js \"template\""
+   ]
+  },
+  {
+   "check": "shader-lint",
+   "where": "runtime/ui.js \"inline\"",
+   "msg": "a shader uses \"inline\" as a name (line 29: .ns-status.busy .ns-spin{display:inline-block}): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+   "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "shader-lint"
+   ],
+   "wheres": [
+    "runtime/ui.js \"inline\""
+   ]
+  },
+  {
+   "check": "shader-lint",
+   "where": "runtime/ui.js \"active\"",
+   "msg": "a shader uses \"active\" as a name (line 39: .ns-anode.active{border-color:var(--ns-primary,#2563eb);box-shadow:0 0 0 3px color-mix(in ): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+   "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "shader-lint"
+   ],
+   "wheres": [
+    "runtime/ui.js \"active\""
+   ]
+  },
+  {
+   "check": "shader-lint",
+   "where": "runtime/ui.js \"fixed\"",
+   "msg": "a shader uses \"fixed\" as a name (line 43: .ns-modal{position:fixed;inset:0;background:rgba(0,0,0,.4);display:flex;align-items:center): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+   "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "shader-lint"
+   ],
+   "wheres": [
+    "runtime/ui.js \"fixed\""
+   ]
+  },
+  {
+   "check": "shader-lint",
+   "where": "runtime/ui.js \"input\"",
+   "msg": "a shader uses \"input\" as a name (line 64: .ns-linker-form input{flex:1 1 280px;min-width:0;padding:7px 9px;border:1px solid var(--ns): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+   "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "shader-lint"
+   ],
+   "wheres": [
+    "runtime/ui.js \"input\""
+   ]
+  },
+  {
+   "check": "shader-lint",
+   "where": "runtime/ui.js \"default\"",
+   "msg": "a shader uses \"default\" as a name (line 84: .ns-w-btn:disabled,.ns-w-choice:disabled{opacity:.55;cursor:default}): GLSL ES reserves it, so a strict GPU rejects the whole shader and the picture stays empty",
+   "fix": "rename it (flat, smooth, centroid, sample, patch, input, output, filter and the rest are GLSL ES reserved words)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "shader-lint"
+   ],
+   "wheres": [
+    "runtime/ui.js \"default\""
+   ]
+  },
+  {
+   "check": "overlap-text",
+   "where": "section#assistant > div.wrap > p.assistant-note \"No provider key? Use the request builder\"",
+   "msg": "lies over the text \"Free tiers have usage limits and may var\" (div.ns-key-help > div.ns-hint)",
+   "fix": "move the box off the text (or the text off the box)",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "overlap-text"
+   ],
+   "wheres": [
+    "section#assistant > div.wrap > p.assistant-note \"No provider key? Use the request builder\""
+   ]
+  },
+  {
+   "check": "overlap-text",
+   "where": "section#request \"Put it in writing Your request, ready to\"",
+   "msg": "lies over the text \"Save and start\" (button#ns-apply)",
+   "fix": "move the box off the text (or the text off the box)",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "overlap-text"
+   ],
+   "wheres": [
+    "section#request \"Put it in writing Your request, ready to\""
+   ]
+  },
+  {
+   "check": "text-only",
+   "where": "section#assistant \"Ask. Clarify. Make a plan.\"",
+   "msg": "the section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+   "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-only"
+   ],
+   "wheres": [
+    "section#assistant \"Ask. Clarify. Make a plan.\""
+   ]
+  },
+  {
+   "check": "text-only",
+   "where": "section#request \"Your request, ready to review.\"",
+   "msg": "the closing section is only text: no picture, icon, mock or effect in it (2 sections like it at this width)",
+   "fix": "give the section a visual: a photograph that fits, the real icons, or a UI fragment on a ground",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "text-only"
+   ],
+   "wheres": [
+    "section#request \"Your request, ready to review.\""
+   ]
+  },
+  {
+   "check": "button-styles",
+   "where": "(one screen)",
+   "msg": "4 button styles on one screen: soft, outline #181715 (\"Otari ↗ Billing may be required\"); soft, fill #181715 (\"Draft a request ↗\"); soft, fill #181715, outline #181715 (\"Save and start\"); soft, outline #bbbcb4 (\"New chat\"); the odd ones out: \"Save and start\", \"New chat\"",
+   "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "button-styles"
+   ],
+   "wheres": [
+    "(one screen)"
+   ]
+  },
+  {
+   "check": "button-styles",
+   "where": "(the page)",
+   "msg": "5 button styles on the page: soft, fill #181715 x4 (\"Draft a request ↗\"); soft, outline #181715 x8 (\"Ask the assistant\"); soft, fill #181715, outline #181715 x2 (\"Save and start\"); soft, outline #bbbcb4 x1 (\"New chat\"); soft, fill #e8e8e3 x1 (\"Download my draft\")",
+   "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+   "widths": [
+    1440,
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "button-styles"
+   ],
+   "wheres": [
+    "(the page)"
+   ]
+  },
+  {
+   "check": "copy-fact",
+   "where": "h1#hero-h \"Plumbing help for Edmonton homes.\"",
+   "msg": "the first screen holds no number, price, date, place, platform or genre",
+   "fix": "put one hard fact from the brief on the first screen: a number, a price, a date, the place, the platforms it runs on or a game's genre; take it from the brief or remove the claim",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "copy-fact"
+   ],
+   "wheres": [
+    "h1#hero-h \"Plumbing help for Edmonton homes.\""
+   ]
+  },
+  {
+   "check": "copy-headings",
+   "where": "h2#services-h \"From a dripping tap to a new water heate\"",
+   "msg": "\"From a dripping tap to a new water heater.\" names no product, part, place or section (5 headings like it; at most one brand line per page) (and 4 more like it: \"Drain cleaning\", \"Water heaters\", \"Leak repair\", \"Renovations & sump pumps\")",
+   "fix": "name the thing in every heading: the product, a part, the place or a section noun",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "copy-headings"
+   ],
+   "wheres": [
+    "h2#services-h \"From a dripping tap to a new water heate\""
+   ]
+  },
+  {
+   "check": "focus-visible",
+   "where": "button#ns-devtoggle \"⚙ Developer\"",
+   "msg": "Tab stop 10, button \"⚙ Developer\": the focus lands on something you cannot see",
+   "fix": "keep the kit's ring (system.css :focus-visible, 2px in --action, there at once); a control that hides itself shows on focus",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "focus-visible"
+   ],
+   "wheres": [
+    "button#ns-devtoggle \"⚙ Developer\""
+   ]
+  },
+  {
+   "check": "section-height",
+   "where": "section#assistant \"A website you can talk toAsk. Clarify. M\"",
+   "msg": "the section's content does not fit it: its lowest content ends 830px below its top, past 828px (the section less 72px of bottom padding) (SR-2)",
+   "fix": "fit the content above the section's bottom padding (--padb), or make it two screens (.g2) in two groups",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "section-height"
+   ],
+   "wheres": [
+    "section#assistant \"A website you can talk toAsk. Clarify. M\""
+   ]
+  },
+  {
+   "check": "one-section",
+   "where": "div#agent-app > div.ns-app \"Northgate Plumbing API key required 127.\"",
+   "msg": "a band: a box 89% of the section wide on a ground of its own that holds only text: the section's own ground is the band (SR-4)",
+   "fix": "put every block of <main> in a <section>, and give a band its own section instead of a ground inside one",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-section"
+   ],
+   "wheres": [
+    "div#agent-app > div.ns-app \"Northgate Plumbing API key required 127.\""
+   ]
+  },
+  {
+   "check": "one-heading",
+   "where": "h2#assistant-h \"Ask. Clarify. Make a plan.\"",
+   "msg": "headings of two sections show whole on one screen at 3 of 91 scroll positions (3.3%; at scroll 2000, 2050, 2100px), here with \"not\": at most 3% on a desktop (SR-5)",
+   "fix": "make the sections one screen tall so their headings sit a screen apart and two never share one",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "one-heading"
+   ],
+   "wheres": [
+    "h2#assistant-h \"Ask. Clarify. Make a plan.\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "div#ns-msgs > div.ns-msg.bot \"Service answers and a local quote-reques\"",
+   "msg": "1 text block starts on a left line at x 105, 25px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "div#ns-msgs > div.ns-msg.bot \"Service answers and a local quote-reques\""
+   ]
+  },
+  {
+   "check": "container-edges",
+   "where": "div#ns-in-use \"In use: no key yet\"",
+   "msg": "6 text blocks start on a left line at x 93, 13px from the container's left: text starts on the container's left, or on one split line (x 623, 732, 841) (also \"Saved setup Custom / unsaved\", \"Don't have an API key?\", \"An API key is a private code fro\") (SR-6)",
+   "fix": "start the text on the container's left, or on the one split line every split shares",
+   "widths": [
+    1440
+   ],
+   "from": "consistency",
+   "ids": [
+    "container-edges"
+   ],
+   "wheres": [
+    "div#ns-in-use \"In use: no key yet\""
+   ]
+  },
+  {
+   "check": "overlap-text",
+   "where": "input#ns-input",
+   "msg": "lies over the text \"Choose a provider below and create a key\" (div.ns-key-help > p:nth-of-type(2))",
+   "fix": "move the box off the text (or the text off the box)",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "overlap-text"
+   ],
+   "wheres": [
+    "input#ns-input"
+   ]
+  },
+  {
+   "check": "cut-text",
+   "where": "div#ns-msgs > div.ns-msg.bot \"Service answers and a local quote-reques\"",
+   "msg": "9 of 20 lines hidden by the overflow of div#ns-msgs",
+   "fix": "give the text room: no overflow clipping a line, no line past its box",
+   "widths": [
+    390
+   ],
+   "from": "consistency",
+   "ids": [
+    "cut-text"
+   ],
+   "wheres": [
+    "div#ns-msgs > div.ns-msg.bot \"Service answers and a local quote-reques\""
+   ]
+  },
+  {
+   "check": "neighbour",
+   "where": "#request section.section.request-section \"Put it in writingYour request, r\"",
+   "msg": "framed, 410px of the footer shows",
+   "fix": "keep the next section's heading and picture out of this screen",
+   "widths": [
+    390
+   ],
+   "from": "layout",
+   "ids": [
+    "neighbour"
+   ],
+   "wheres": [
+    "#request section.section.request-section \"Put it in writingYour request, r\""
+   ]
+  }
+ ],
+ "waived": [],
+ "warnCount": 22,
+ "at": "2026-11-21T19:18:18.424Z",
+ "openTold": true
+}
