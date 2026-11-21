@@ -40,7 +40,7 @@ No install or build is required. Use a current browser. The browser fetches loca
 
 ## Deploy to GitHub Pages
 
-Publish this root on the main branch of a public repository and select **Settings → Pages → Deploy from branch → main / root**. Expected URL: https://ray3242.github.io/agentic-trades-site/. No build pipeline, backend or secret is required. Check the manifest and definition response headers for CORS. GitHub Pages supplies HTTPS.
+Publish this root on the main branch of a public repository and select **Settings → Pages → Deploy from branch → main / root**. Expected URL: https://ray3242.github.io/agentic-trades/. No build pipeline, backend or secret is required. Check the manifest and definition response headers for CORS. GitHub Pages supplies HTTPS.
 
 ## Tests and limits
 

@@ -27,7 +27,7 @@ Pilot with a consenting real trade business, replace stand-in photographs, conne
 ## Submission links
 
 - Source: https://github.com/ray3242/agentic-trades-site
-- Demo: https://ray3242.github.io/agentic-trades-site/
+- Demo: https://ray3242.github.io/agentic-trades/
 - Video: record DEMO_SCRIPT.md and attach the resulting public video URL in Devpost.
 
 Entrant identity, team details, video upload and final submission require the owner’s accounts. The published demo is fictional, not an operating emergency service.
